@@ -1,0 +1,9 @@
+crewai-tools
+langchain
+embedchain
+openai
+requests
+beautifulsoup4
+selenium
+pydantic
+pytest
