@@ -9,3 +9,7 @@ from data_analysis_crew.main import main
 
 if __name__ == "__main__":
     main()
+
+# Escreva o conteúdo no arquivo start.py para garantir que está correto
+with open("start.py", "w") as f:
+    f.write(start_py_content)
