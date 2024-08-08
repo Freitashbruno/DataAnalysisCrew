@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "data-analysis-crew"
+version = "0.1.0"
+description = "A data analysis project"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.14"
+crewai_tools = "^0.1.0"

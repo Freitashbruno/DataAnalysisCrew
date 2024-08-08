@@ -1,0 +1,17 @@
+collect_data_task:
+  description: >
+    Collect data from various sources, ensuring it is clean and ready for analysis.
+  expected_output: >
+    A cleaned dataset ready for analysis.
+
+analyze_data_task:
+  description: >
+    Perform a detailed statistical analysis on the collected dataset.
+  expected_output: >
+    A report summarizing the statistical findings.
+
+visualize_data_task:
+  description: >
+    Create visualizations that highlight key insights from the data analysis. Ensure the use of coherent graphs and storytelling techniques to present the data effectively.
+  expected_output: >
+    A set of visualizations that effectively communicate the analysis results using storytelling techniques.
