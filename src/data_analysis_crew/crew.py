@@ -1,4 +1,4 @@
-from crewai import Agent, Task, Crew, Process
+from src.data_analysis_crew.crew import Agent, Task, Crew, Process
 from data_analysis_crew.tools.data_tool import DataCollectionTool, StatisticalAnalysisTool, DataVisualizationTool
 
 
