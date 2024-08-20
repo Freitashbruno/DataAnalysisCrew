@@ -16,7 +16,7 @@ os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
 sys.path.insert(0, os.path.abspath('src'))
 
 # Importa e executa o script principal
-from data_analysis_crew.main import main
+from src.data_analysis_crew.main import main
 
 if __name__ == "__main__":
     main()
