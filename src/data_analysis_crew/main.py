@@ -1,5 +1,6 @@
-from src.data_analysis_crew.crew import crew
-import pandas as pd 
+# src/data_analysis_crew/main.py
+from src.data_analysis_crew.crew import crew 
+# ... restante do código do arquivo main.py
 
 if __name__ == "__main__":
     inputs = {
