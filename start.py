@@ -9,6 +9,8 @@ from utils import get_openai_api_key
 
 # Utilize a função para obter a chave da API
 openai_api_key = get_openai_api_key()
+os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'openai_api_key = get_openai_api_key()
+os.environ["OPENAI_API_KEY"] = openai_api_key  # Certifique-se de que a chave é atribuída aqui
 os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
 
 # Configure o PYTHONPATH
