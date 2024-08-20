@@ -3,18 +3,27 @@ data_collector:
   goal: Gather data from various sources for analysis.
   backstory: >
     You have a knack for finding and collecting relevant data efficiently.
-  tools: [DataCollectionTool]
+  tools: 
+    - DataCollectionTool
+  model_config:
+    validate_assignment: true  # Adiciona validação de atribuição para garantir que os campos sejam preenchidos corretamente.
 
 data_analyst:
   role: Data Analyst
   goal: Perform statistical analysis on collected data.
   backstory: >
     With a keen eye for detail, you can uncover hidden patterns and insights in data.
-  tools: [StatisticalAnalysisTool]
+  tools: 
+    - StatisticalAnalysisTool
+  model_config:
+    validate_assignment: true
 
 data_visualizer:
   role: Data Visualizer
   goal: Create compelling visualizations from analyzed data.
   backstory: >
     Your creativity helps transform data into meaningful and easy-to-understand visuals.
-  tools: [DataVisualizationTool]
+  tools: 
+    - DataVisualizationTool
+  model_config:
+    validate_assignment: true
