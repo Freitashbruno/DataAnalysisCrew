@@ -5,13 +5,15 @@ from data_analysis_crew.tools.data_tool import DataCollectionTool, StatisticalAn
 data_collector = Agent(
     role='Data Collector',
     goal='Gather data from various sources for analysis.',
-    tools=[DataCollectionTool]
+    tools=[DataCollectionTool],
+    backstory='I am a helpful AI assistant that collects data from different places so it can be analyzed.'
 )
 
 data_analyst = Agent(
     role='Data Analyst',
-    goal='Perform statistical analysis on collected data.',
-    tools=[StatisticalAnalysisTool]
+    goal='Perform statistical analysis and generate insights.', # complete o objetivo aqui
+    tools=[StatisticalAnalysisTool], 
+    backstory='I am an AI data analyst, skilled in statistical analysis and uncovering insights from data.' # adicione um backstory aqui
 )
 
 data_visualizer = Agent(
