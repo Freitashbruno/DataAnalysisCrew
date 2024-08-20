@@ -1,29 +1,28 @@
-data_collector:
-  role: Data Collector
-  goal: Gather data from various sources for analysis.
-  backstory: >
-    You have a knack for finding and collecting relevant data efficiently.
-  tools: 
-    - DataCollectionTool
-  model_config:
-    validate_assignment: true  # Adiciona validação de atribuição para garantir que os campos sejam preenchidos corretamente.
+import yaml
+from crewai import Agent
 
-data_analyst:
-  role: Data Analyst
-  goal: Perform statistical analysis on collected data.
-  backstory: >
-    With a keen eye for detail, you can uncover hidden patterns and insights in data.
-  tools: 
-    - StatisticalAnalysisTool
-  model_config:
-    validate_assignment: true
+# Carregar YAML
+with open("agents.yaml", "r") as file:
+    agents_data = yaml.safe_load(file)
 
-data_visualizer:
-  role: Data Visualizer
-  goal: Create compelling visualizations from analyzed data.
-  backstory: >
-    Your creativity helps transform data into meaningful and easy-to-understand visuals.
-  tools: 
-    - DataVisualizationTool
-  model_config:
-    validate_assignment: true
+# Criar agentes a partir do YAML
+data_collector = Agent(
+    role=agents_data['data_collector']['role'],
+    goal=agents_data['data_collector']['goal'],
+    backstory=agents_data['data_collector']['backstory'],
+    tools=agents_data['data_collector']['tools']
+)
+
+data_analyst = Agent(
+    role=agents_data['data_analyst']['role'],
+    goal=agents_data['data_analyst']['goal'],
+    backstory=agents_data['data_analyst']['backstory'],
+    tools=agents_data['data_analyst']['tools']
+)
+
+data_visualizer = Agent(
+    role=agents_data['data_visualizer']['role'],
+    goal=agents_data['data_visualizer']['goal'],
+    backstory=agents_data['data_visualizer']['backstory'],
+    tools=agents_data['data_visualizer']['tools']
+)
