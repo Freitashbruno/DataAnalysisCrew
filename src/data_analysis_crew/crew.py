@@ -1,6 +1,6 @@
-from src.data_analysis_crew.crew import Agent, Task, Crew, Process
-from data_analysis_crew.tools.data_tool import DataCollectionTool, StatisticalAnalysisTool, DataVisualizationTool
-
+# src/data_analysis_crew/crew.py
+from src.data_analysis_crew.agents import Agent, Task, Crew, Process  # Importe do arquivo agents.py
+# ... restante do código do arquivo crew.py
 
 data_collector = Agent(
     role='Data Collector',
